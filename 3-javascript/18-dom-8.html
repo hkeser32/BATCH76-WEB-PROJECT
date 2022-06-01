@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .darkmode {
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="button" id="btnMode" value="Dark mode" onclick="modDegis()" />
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum impedit
+      dolorum qui ipsa ipsum libero at eius expedita explicabo sint, odit
+      exercitationem. Delectus consectetur sit praesentium iusto consequatur
+      aspernatur labore. Lorem ipsum dolor sit amet, consectetur adipisicing
+      elit. Optio officia numquam non molestiae! Corporis vitae totam corrupti
+      eius, autem doloribus officiis, soluta minima nobis alias, amet ipsam!
+      Libero, ratione rem. Quae omnis facere temporibus fugiat eveniet
+      necessitatibus soluta. In aperiam quibusdam laudantium ipsum dolorum
+      cumque facilis quisquam omnis, porro vitae modi ex corporis ipsa,
+      repellendus nostrum iusto facere unde officiis.
+    </p>
+
+    <script>
+      let mode = "light";
+
+      function modDegis(){
+        if(mode == "light"){
+         
+          document.querySelector("body").classList.add("darkmode");
+          document.querySelector("#btnMode").value = "Light Mode";
+          mode= "dark";
+        } 
+        else{
+          document.querySelector("body").classList.remove("darkmode");
+          mode="light";
+          document.querySelector("#btnMode").value = "Dark Mode";
+        }
+        
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let bul = Math.floor(Math.random() * 100);
+        var tahmin= prompt("bir sayı girin");
+        function oyun() {
+        if(tahmin== bul){
+            alert("tebrikler");
+        } else if (tahmin<bul){
+            alert("YUKARI");
+             tahmin= prompt("bir sayı girin");
+            oyun();
+        } else if(tahmin>bul){
+            alert("Assagi");
+             tahmin= prompt("bir sayı girin");
+            oyun();
+        }
+    }
+    oyun();
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .mavi{
+            color: navy;
+        }
+        .bg-pembe{
+            background-color: pink;
+        }
+        .yazitipi{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            text-decoration: underline;
+            
+        }
+    </style>
+  </head>
+  <body>
+    <div id="yazi" class="mavi bg-pembe">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, libero
+      commodi aliquam dignissimos reiciendis culpa fugiat deleniti doloremque,
+      similique impedit, dolor odit. Animi corrupti neque facere deserunt
+      mollitia sit consequuntur!
+    </div>
+
+    <script>
+       const elYazi = document.querySelector("#yazi");
+       elYazi.classList.add("yazitipi");
+
+       console.log(elYazi.classList);
+    </script>
+  </body>
+</html>
